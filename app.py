@@ -2,7 +2,7 @@
 
 from flask import Flask, jsonify
 from flask_cors import CORS
-from datetime import datetime
+from datetime import datetime, timezone
 import os
 
 
@@ -20,7 +20,7 @@ CORS(app, resources={r"/": {"origins": "https://basic-info-api-kgli.onrender.com
 def basic_info():
     """ method returns email, current datetime and github url"""
     current_datetime = (
-        datetime.now(datetime.timezone.utc)   # datetime in iso format utc
+        datetime.now(timezone.utc)   # datetime in iso format utc
         .isoformat()
         .replace("+00:00", "Z")
     )

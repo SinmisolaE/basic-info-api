@@ -14,7 +14,7 @@ email = os.getenv('EMAIL')
 github_url = os.getenv('GITHUB_URL')
 
 # Handle Cross Origin Resource Sharing for security
-CORS(app, resources={r"/": {"origins": https://basic-info-api-kgli.onrender.com/}})
+CORS(app, resources={r"/": {"origins": "https://basic-info-api-kgli.onrender.com"}})
 
 @app.route("/", methods=['GET'])   # app endpoint
 def basic_info():

@@ -16,11 +16,8 @@ github_url = os.getenv('GITHUB_URL')
 #CORS(app, resources={r"/api": {"origins": http://127.0.0.1:5000/}})
 print(email)
 
-@app.route('/')
-def index():
-    return redirect()
 
-@app.route("/api", methods=['GET'])
+@app.route("/", methods=['GET'])
 def basic_info():
     """ method returns email, current datetime and github url"""
     current_datetime = datetime.utcnow().isoformat() + 'Z'

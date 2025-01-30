@@ -85,5 +85,6 @@ Returns a JSON response with the email address, current date and time, and GitHu
   "current_time": "2024-10-30T12:34:56.789Z",
   "github_url": "https://github.com/SinmisolaE/basic-info-api"
 }
+```
 
 Flask Official Documentation: https://flask.palletsprojects.com/

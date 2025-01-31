@@ -26,8 +26,8 @@ def basic_info():
     )
     data = {
         "email": email,
-        "current time": current_datetime,
-        "github url": github_url
+        "current_datetime": current_datetime,
+        "github_url": github_url
     }
     return jsonify(data), 200   
 
